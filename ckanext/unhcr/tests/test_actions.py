@@ -380,7 +380,9 @@ class TestResourceUpload(base.FunctionalTestBase):
 
         resource = factories.Resource(
             package_id=dataset['id'],
-            upload=test_upload)
+            upload=test_upload,
+            url_type='upload',
+        )
 
         assert_equals(
             resource['url'],
