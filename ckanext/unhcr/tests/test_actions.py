@@ -381,6 +381,7 @@ class TestResourceUpload(base.FunctionalTestBase):
         resource = factories.Resource(
             package_id=dataset['id'],
             upload=test_upload,
+            url = "http://fakeurl/test.txt",
             url_type='upload',
         )
 
